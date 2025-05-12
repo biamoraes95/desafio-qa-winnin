@@ -6,8 +6,6 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de QA 
 
 ## ✅ Critérios de Aceite (formato BDD)
 
-## ✅ Critérios de Aceite (formato BDD)
-
 ### 🔹 Cenário 1: Exibição de notícias na home
 **Dado** que o usuário acessa a página principal do site `ge.globo.com`  
 **Quando** a página for totalmente carregada  
