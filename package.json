@@ -3,20 +3,21 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "test": "npx playwright test"
+        "test": "npx playwright test"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "@playwright/test": "^1.52.0"
+        "@playwright/test": "^1.52.0",
+        "@types/node": "^22.15.17"
     },
     "dependencies": {
-      "playwright": "^1.52.0",
-      "playwright-core": "^1.52.0"
+        "playwright": "^1.52.0",
+        "playwright-core": "^1.52.0"
     },
     "directories": {
-      "test": "tests"
+        "test": "tests"
     },
     "description": ""
-  }
+}
