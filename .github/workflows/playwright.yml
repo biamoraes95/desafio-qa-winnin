@@ -1,11 +1,9 @@
-name: Run Playwright Tests
-
-on:
-  workflow_dispatch:
-
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    env:
+      HEADLESS: true
 
     steps:
       - name: ⬇️ Checkout do repositório
