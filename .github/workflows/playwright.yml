@@ -24,11 +24,3 @@ jobs:
 
       - name: ▶️ Executar testes Playwright
         run: npx playwright test
-
-      - name: 📤 Upload do relatório HTML
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: playwright-report
-          path: playwright-report/
-
