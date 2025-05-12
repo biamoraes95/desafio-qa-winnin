@@ -1,0 +1,18 @@
+# Dependências do Node
+node_modules/
+
+# Resultados dos testes
+test-results/
+playwright-report/
+
+# Variáveis de ambiente
+.env
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+.DS_Store
+
+# Pastas do sistema/IDE
+.vscode/
+.idea/
