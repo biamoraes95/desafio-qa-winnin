@@ -1,0 +1,33 @@
+name: Run Playwright Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Instalar dependências
+        run: npm install
+
+      - name: 🔧 Instalar Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: ▶️ Executar testes Playwright
+        run: npx playwright test
+
+      - name: 📤 Upload dos artefatos de teste
+        if: always()
+        uses: actions/upload-artifact@v2  # <- CORRETO!
+        with:
+          name: playwright-report
+          path: playwright-report/
