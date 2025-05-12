@@ -27,7 +27,7 @@ jobs:
 
       - name: 📤 Upload dos artefatos de teste
         if: always()
-        uses: actions/upload-artifact@v2  # <- CORRETO!
+        uses: actions/upload-artifact@v2  
         with:
           name: playwright-report
           path: playwright-report/
